@@ -1,0 +1,29 @@
+@mixin button {
+    background-color: $bg-signin-button;
+    color: $signin-color;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 14px;
+    cursor: pointer;
+}
+
+
+.search-buttons {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+
+    .search-btn {
+        padding: 10px 10px;
+        margin: 0 15px;
+        color: #555;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        cursor: pointer;
+    
+        &:hover {
+            border: 1px solid #ccc;
+        }
+}
+
+}
