@@ -1,4 +1,4 @@
-# DonataB-Google-search-with-Sass
+# Google search with Sass
 
 I made this project to practice HTML5 and for using Sass for the first time.
 
