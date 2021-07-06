@@ -1,0 +1,42 @@
+@import "./variables";
+
+
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: $bg-footer;
+    color: $footer-text-color;
+
+    p {
+        padding: 10px;
+    }
+   
+    & li {
+        list-style: none;
+        & a {
+            text-decoration: none;
+            color: currentColor;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    
+    .about {
+        border-top: 1px solid $footer-border-top;
+        
+        & .items {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 7px;
+        }
+
+        & .terms {
+            padding-bottom: 15px;
+        }
+    }
+}
