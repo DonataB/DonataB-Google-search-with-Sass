@@ -5,8 +5,10 @@
     border-radius: 3px;
     padding: 8px 14px;
     cursor: pointer;
+    &:hover {
+        box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    }
 }
-
 
 .search-buttons {
     width: 90%;

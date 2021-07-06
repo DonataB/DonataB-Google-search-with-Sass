@@ -5,44 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css">
-    <title>Google Search</title>
+    <title>Advanced Search</title>
 </head>
-<body>
+<body class="adv-body">
     <div class="container">
         <!-- header -->
-      <header class="header">
-          <div class="links">
-            <a href="./imageSearch.html" class="subpage-links">Images</a>
-            <a href="" class="subpage-links">Advanced</a>
+      <header class="header-advanced">
+          <div class="adv-search-header">
+              <span class="img-adv-search"><a href="./index.html" title="Go to Home Page"><img src="./images/google.png" height="40px"></a></span>
           </div>
-          <div class="buttons">
-            <ion-icon class="header-buttons" size="large" name="apps"></ion-icon>
+          <div class="buttons btn-advanced">
+            <a href="./imageSearch.html" class="subpage-links">Images</a>
+            <ion-icon class="header-buttons icon-adv" size="large" name="apps"></ion-icon>
             <button class="header-buttons sign-in">Sign in</button>
           </div>
       </header>
 
-      <!-- google search -->
-      <section class="search">
-          <div class="logo">
-              <img src="./images/google.png" alt="google search logo">
-          </div>
-          <form action="https://google.com/search">
-            <div class="icons">
-                <input class="search-bar" type="text" name="q">
-                <div class="search-icons"><img src="./images/search.png"></div>
-                <div class="search-icons"><img class="mic" src="./images/mic.png"> </div>
+      <!-- google advanced search -->
+         
+        <form action="https://google.com/search">
+            <div class="title">Advanced Search</div>
+            
+            <div class="form">
+                <div class="form-title">Find pages with… </div>
+                <div class="inputs">
+                    <div class="text-input">
+                        <label for="all">all these words:</label>
+                        <input type="text1" name="as_q">
+                    </div>
+                    <div class="text-input">
+                        <label for="all" class="x">this exact word or phrase:</label>
+                        <input type="text1" name="as_epq">
+                    </div>
+                    <div class="text-input"> 
+                        <label for="all" class="x">any of these words:</label>
+                        <input type="text1" name="as_oq">
+                    </div>
+                    <div class="text-input">
+                        <label for="all" class="x">none of these words:</label>
+                        <input type="text1" name="as_eq">
+                    </div>
+                    <div class="btn-advSearch">
+                        <input type="submit" class="submit" value="Advanced Search">
+                    </div>
+                </div>
             </div>
-            <div class="search-buttons">
-                <input class="search-btn" type="submit" value="Google Search">
-                <input class="search-btn" type="submit" value="I'm Feeling Lucky" name="btnI">
-             </div>
-         </form>
-        
-         <div class="language">
-            Google offered in: <a href="https://www.google.com/setprefs?sig=0_hmdag6cYguGVZncGl0pLyt-2PEI%3D&hl=pl&source=homepage&sa=X&ved=0ahUKEwiexezL36jvAhUByxoKHU4hAecQ2ZgBCA0">polski</a>
-        </div>
-      </section>
-
+        </form>
       <footer>
         <div class="country">
                     <p>Poland</p>

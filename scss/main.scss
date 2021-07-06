@@ -36,6 +36,23 @@
     }
 
 }
+.adv-body{
+    margin: 0;
+    padding: 0;
+}
+.header-advanced {
+    @extend .header;
+    background-color: $bg-header-advanced;
+    padding: 1rem;
+    margin-bottom: 0;
+    & .icon-adv {
+        margin-right: 1rem;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    
+}
 
 .logo {
     width: 80%;
@@ -141,7 +158,65 @@ footer {
     }
 }
 
-@media (min-width: 600px) {
+// advanced search styles
+
+.title {
+    padding: 20px;
+    color: #d93025;
+    font-weight: 700;
+    font-size: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.form {
+    margin: 1rem;
+    height: 400px;
+    & .form-title {
+        margin-bottom: 1rem;
+    }
+    & label {
+        display: inline-block;
+        min-width: 20px;
+        height: 2rem;
+        color: #222;
+        
+    }
+
+    & input[type="text1"] {
+            font-size: 14px;
+            padding: .4rem;
+            border: 1px solid #d9d9d9;
+            border-top: 1px solid #c0c0c0;
+            width: 300px;
+            margin-bottom: 1rem;
+            &:hover {
+                box-shadow: 0 1px 6px rgba(32,33,36,.28);
+            }
+          
+          }
+        
+    & input[type="submit"].submit {
+        background-color: #4387fd;
+        text-align: center;
+        padding: 10px;
+        color: #fff;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        cursor: pointer;
+        &:hover {
+                background-color: #357ae8;
+            }
+          }
+
+}
+
+.icon-adv {
+    position: relative;
+    top: 4px;
+}
+
+
+@media (min-width: 460px) {
 
     .header {
         justify-content: flex-end;
@@ -160,6 +235,37 @@ footer {
             margin-right: 1rem;
         }
     }
+    .img-adv-search {
+        position: absolute;
+        left: 1rem;
+        top: 1rem;
+    }
+   
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        padding: 10px;
+        height: 50px;
+      }
+
+    input[type="text1"] {
+        height: 2.5rem; 
+    }
+    
+    input[type="submit"].submit {
+        margin-top: 4rem;
+      }
+
+    .text-input {
+        display: flex;
+        justify-content: space-between;
+        max-width: 600px;
+    }
+
 
    
 }
