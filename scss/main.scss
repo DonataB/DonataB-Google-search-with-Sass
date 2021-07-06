@@ -2,6 +2,8 @@
 @import "./reset";
 @import "./base";
 @import "./buttons";
+@import "./advanced-search";
+@import "./footer";
 
 .header {
     display: flex;
@@ -36,23 +38,7 @@
     }
 
 }
-.adv-body{
-    margin: 0;
-    padding: 0;
-}
-.header-advanced {
-    @extend .header;
-    background-color: $bg-header-advanced;
-    padding: 1rem;
-    margin-bottom: 0;
-    & .icon-adv {
-        margin-right: 1rem;
-        &:hover {
-            cursor: pointer;
-        }
-    }
-    
-}
+
 
 .logo {
     width: 80%;
@@ -117,102 +103,17 @@
     }
 }
 
-footer {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background-color: $bg-footer;
-    color: $footer-text-color;
-
-    p {
-        padding: 10px;
-    }
-   
-
-    & li {
-        list-style: none;
-        
-        & a {
-            text-decoration: none;
-            color: currentColor;
-            &:hover {
-                text-decoration: underline;
-            }
-        }
-    }
-    
-    .about {
-        border-top: 1px solid $footer-border-top;
-        
-        & .items {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            padding: 7px;
-        }
-
-        & .terms {
-            padding-bottom: 15px;
-        }
-    }
-}
-
-// advanced search styles
-
-.title {
-    padding: 20px;
-    color: #d93025;
-    font-weight: 700;
-    font-size: 20px;
-    border-bottom: 1px solid #ccc;
-}
-
-.form {
-    margin: 1rem;
-    height: 400px;
-    & .form-title {
-        margin-bottom: 1rem;
-    }
-    & label {
-        display: inline-block;
-        min-width: 20px;
-        height: 2rem;
-        color: #222;
-        
-    }
-
-    & input[type="text1"] {
-            font-size: 14px;
-            padding: .4rem;
-            border: 1px solid #d9d9d9;
-            border-top: 1px solid #c0c0c0;
-            width: 300px;
-            margin-bottom: 1rem;
-            &:hover {
-                box-shadow: 0 1px 6px rgba(32,33,36,.28);
-            }
-          
-          }
-        
-    & input[type="submit"].submit {
-        background-color: #4387fd;
-        text-align: center;
-        padding: 10px;
-        color: #fff;
-        border: 1px solid transparent;
-        border-radius: 4px;
-        cursor: pointer;
+.header-advanced {
+    @extend .header;
+    background-color: $bg-header-advanced;
+    padding: 1rem;
+    margin-bottom: 0;
+    & .icon-adv {
+        margin-right: 1rem;
         &:hover {
-                background-color: #357ae8;
-            }
-          }
-
-}
-
-.icon-adv {
-    position: relative;
-    top: 4px;
+            cursor: pointer;
+        }
+    }  
 }
 
 
@@ -265,7 +166,4 @@ footer {
         justify-content: space-between;
         max-width: 600px;
     }
-
-
-   
 }
