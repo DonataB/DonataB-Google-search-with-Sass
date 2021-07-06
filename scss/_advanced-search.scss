@@ -1,0 +1,59 @@
+@import "./variables";
+
+.adv-body{
+    margin: 0;
+}
+
+
+
+.title {
+    padding: 20px;
+    color: $adv-header-color;
+    font-weight: 700;
+    font-size: 20px;
+    border-bottom: 1px solid $adv-header--border-bottom;
+}
+
+.form {
+    margin: 1rem;
+    height: 400px;
+    & .form-title {
+        margin-bottom: 1rem;
+    }
+    & label {
+        display: inline-block;
+        min-width: 20px;
+        height: 2rem;
+    }
+
+    & input[type="text1"] {
+            font-size: 14px;
+            padding: .4rem;
+            border: 1px solid $adv-input--border;
+            border-top: 1px solid $adv-input--border-top;
+            width: 300px;
+            margin-bottom: 1rem;
+            &:hover {
+                box-shadow: 0 1px 6px $adv-input--hover-shadow;
+            }
+          
+          }
+        
+    & input[type="submit"].submit {
+        background-color: $adv-submit--bg-color;
+        text-align: center;
+        padding: 10px;
+        color: $adv-submit--text-color;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        cursor: pointer;
+        &:hover {
+            background-color: $adv-submit--hover-color;
+            }
+          }
+}
+
+.icon-adv {
+    position: relative;
+    top: 4px;
+}
