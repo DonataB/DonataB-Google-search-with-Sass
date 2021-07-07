@@ -14,8 +14,8 @@ ion-icon {
 }
 
 .search-buttons {
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+  text-align: center;
   margin-bottom: 1.5rem;
 }
 .search-buttons .search-btn {
@@ -174,17 +174,17 @@ footer .about .terms {
 }
 
 .icons {
-  width: 90%;
   margin: 0 auto;
   display: flex;
   position: relative;
 }
 .icons .search-bar {
-  width: 100%;
-  max-width: 310px;
+  width: 700px;
+  max-width: 700px;
   padding: 10px 50px;
   border: 1px solid #dfe1e5;
   border-radius: 30px;
+  margin: 0 auto;
   margin-bottom: 1.5rem;
 }
 .icons .search-bar:hover {
@@ -200,7 +200,7 @@ footer .about .terms {
 }
 .icons .search-icons .mic {
   position: relative;
-  left: 16.7rem;
+  left: 18.7rem;
   bottom: 0.15rem;
 }
 
@@ -236,8 +236,16 @@ footer .about .terms {
     margin-right: 2rem;
   }
 
+  .logo {
+    margin-left: 50px;
+  }
+
   .search {
     margin-top: 6rem;
+  }
+
+  .icons .mic {
+    margin-left: 4rem;
   }
 
   .about {
