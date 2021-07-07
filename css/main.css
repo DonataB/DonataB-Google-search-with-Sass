@@ -34,93 +34,6 @@ ion-icon {
   text-align: center;
 }
 
-.adv-body {
-  margin: 0;
-}
-
-.title {
-  padding: 20px;
-  color: #d93025;
-  font-weight: 700;
-  font-size: 20px;
-  border-bottom: 1px solid #ccc;
-}
-
-.form {
-  margin: 1rem;
-  height: 400px;
-}
-.form .form-title {
-  margin-bottom: 1rem;
-}
-.form label {
-  display: inline-block;
-  min-width: 20px;
-  height: 2rem;
-}
-.form input[type=text1] {
-  font-size: 14px;
-  padding: 0.4rem;
-  border: 1px solid #d9d9d9;
-  border-top: 1px solid #c0c0c0;
-  width: 300px;
-  margin-bottom: 1rem;
-}
-.form input[type=text1]:hover {
-  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
-}
-.form input[type=submit].submit {
-  background-color: #4387fd;
-  text-align: center;
-  padding: 10px;
-  color: #fff;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  cursor: pointer;
-}
-.form input[type=submit].submit:hover {
-  background-color: #357ae8;
-}
-
-.icon-adv {
-  position: relative;
-  top: 4px;
-}
-
-footer {
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: #f2f2f2;
-  color: rgba(0, 0, 0, 0.5);
-}
-footer p {
-  padding: 10px;
-}
-footer li {
-  list-style: none;
-}
-footer li a {
-  text-decoration: none;
-  color: currentColor;
-}
-footer li a:hover {
-  text-decoration: underline;
-}
-footer .about {
-  border-top: 1px solid #ccc;
-}
-footer .about .items {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 7px;
-}
-footer .about .terms {
-  padding-bottom: 15px;
-}
-
 .header, .header-advanced {
   display: flex;
   justify-content: space-between;
@@ -156,6 +69,18 @@ footer .about .terms {
 }
 .header .sign-in:hover, .header-advanced .sign-in:hover {
   box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+.header-advanced {
+  background-color: #f1f1f1;
+  padding: 1rem;
+  margin-bottom: 0;
+}
+.header-advanced .icon-adv {
+  margin-right: 1rem;
+}
+.header-advanced .icon-adv:hover {
+  cursor: pointer;
 }
 
 .logo {
@@ -216,16 +141,91 @@ footer .about .terms {
   text-decoration: underline;
 }
 
-.header-advanced {
-  background-color: #f1f1f1;
-  padding: 1rem;
-  margin-bottom: 0;
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #f2f2f2;
+  color: rgba(0, 0, 0, 0.5);
 }
-.header-advanced .icon-adv {
-  margin-right: 1rem;
+footer p {
+  padding: 10px;
 }
-.header-advanced .icon-adv:hover {
+footer li {
+  list-style: none;
+}
+footer li a {
+  text-decoration: none;
+  color: currentColor;
+}
+footer li a:hover {
+  text-decoration: underline;
+}
+footer .about {
+  border-top: 1px solid #ccc;
+}
+footer .about .items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 7px;
+}
+footer .about .terms {
+  padding-bottom: 15px;
+}
+
+.adv-body {
+  margin: 0;
+}
+
+.title {
+  padding: 20px;
+  color: #d93025;
+  font-weight: 700;
+  font-size: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.form {
+  margin: 1rem;
+  height: 400px;
+}
+.form .form-title {
+  margin-bottom: 1rem;
+}
+.form label {
+  display: inline-block;
+  min-width: 20px;
+  height: 2rem;
+}
+.form input[type=text1] {
+  font-size: 14px;
+  padding: 0.4rem;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  width: 300px;
+  margin-bottom: 1rem;
+}
+.form input[type=text1]:hover {
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+.form input[type=submit].submit {
+  background-color: #4387fd;
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
   cursor: pointer;
+}
+.form input[type=submit].submit:hover {
+  background-color: #357ae8;
+}
+
+.icon-adv {
+  position: relative;
+  top: 4px;
 }
 
 @media (min-width: 460px) {

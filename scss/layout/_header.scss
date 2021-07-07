@@ -1,0 +1,49 @@
+@import "../base/variables";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+    .subpage-links {
+        text-decoration: none;
+        color: $main-color;
+        &:first-child {
+            margin-right: 1em;
+        }
+        &:hover {
+            text-decoration: underline;
+            color: $active-link-color;
+        }
+    }
+    
+    .header-buttons:first-child {
+        margin-right: .5em;
+
+        &:hover {
+            cursor: pointer;
+        }
+        
+    }
+    .sign-in {
+        @include button ();
+        position: relative;
+        top: -10px;
+
+    }
+
+}
+
+
+.header-advanced {
+    @extend .header;
+    background-color: $bg-header-advanced;
+    padding: 1rem;
+    margin-bottom: 0;
+    & .icon-adv {
+        margin-right: 1rem;
+        &:hover {
+            cursor: pointer;
+        }
+    }  
+}
