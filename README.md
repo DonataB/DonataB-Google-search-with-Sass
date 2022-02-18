@@ -2,6 +2,12 @@
 
 I made this project to practice HTML5 and for using Sass for the first time.
 
+This project was executed using the following technologies:
+
+- HTML5
+- SCSS
+- GIT
+
 CS50's project0
 
 Specification
